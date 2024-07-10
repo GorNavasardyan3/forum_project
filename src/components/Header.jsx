@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 function Header() {
   return (
-    <header className='third-color text-white flex items-center justify-around'>
+    <header className='second_bg_color text-white flex items-center justify-around'>
       <div className=' flex items-center ml-10'>
         <div className='p-2 flex items-center'>
           <i className='m-2'>
@@ -14,18 +14,20 @@ function Header() {
           </i>
           <p>Forum</p>
         </div>
-        <div className=' m-2 flex items-center '>
-          <FontAwesomeIcon className='h-[20px] w-[20px] ml-4' icon={faMagnifyingGlass} />
-          <input type="text" placeholder='Որոնում...' className='text-xl third-color outline-none ml-2 p-2' />
+        <div className=' m-2 flex items-start fourth_bg_color rounded-md'>
+          <div className=' p-2'>
+            <img src="/images/search.png" className='h-[30px] w-[30px]' alt="" />
+          </div>
+          <input type="text" placeholder='Որոնում...' className='text-xl fourth_bg_color outline-none  ml-2 p-2 rounded-md' />
         </div>
       </div>
       <Navbar/>
       <div className=' mr-2 p-2 flex gap-4'>
-        <button>
-          <FontAwesomeIcon icon={faBell} className='h-[20px] w-[20px]'/>
+        <button className='bells-shadow'>
+          <img src="/images/bell.png" className=' h-[35px] w-[35px]' alt="" />
         </button>
         <button>
-          <FontAwesomeIcon icon={faEnvelope} className='h-[20px] w-[20px]'/>
+          <img src="/images/smsnotification.png" className=' h-[20px] w-[20px]' alt="" />
         </button>
       </div>
     </header>

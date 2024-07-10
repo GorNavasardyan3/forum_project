@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import Aside from "./components/Aside";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home/>}/>
         </Routes>
+        <Aside/>
       </div>
     </>
   );

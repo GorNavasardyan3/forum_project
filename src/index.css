@@ -27,6 +27,19 @@
 .brown_color{
     color: #8D8080;
 }
+.primary-first-bg-color{
+    background-color: #FC728B;
+}
+.primary-first-color{
+    background-color: #FC728B;
+}
+
+.light-first-bg-color{
+    background-color: #D1CAFF;
+}
+.light-first-color{
+    color: #D1CAFF;
+}
 
 *{
     font-family: "Comfortaa", sans-serif;
@@ -39,4 +52,8 @@ body{
 }
 
 
-
+.bells-shadow{
+    padding: 5px;
+    box-shadow:  -5px -5px 0px #FC728B;
+    border-radius:50%;
+}
