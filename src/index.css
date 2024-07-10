@@ -4,41 +4,113 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap'); */
 
 /* colors */
-.second_bg_color{
-    background-color: #252D3A;
-}
 
 .second_color{
     color: #252D3A;
 }
 
+.second_bg_color{
+    background-color: #252D3A;
+}
+
+
 .third-color{
     background-color: #272D43;
+}
+
+.third-bg-color{
+    background-color: #272D43;
+}
+
+
+.fourth_color{
+    color: #33394F;
 }
 
 .fourth_bg_color{
     background-color: #33394F;
 }
 
-.fourth_color{
-    color: #33394F;
-}
 
 .brown_color{
     color: #8D8080;
 }
+
+.primary-first-color{
+    color: #FC728B;
+}
+
 .primary-first-bg-color{
     background-color: #FC728B;
 }
-.primary-first-color{
-    background-color: #FC728B;
+
+.primary-second-color{
+    color: #F4C395;
+}
+
+.primary-second-bg-color{
+    background-color: #F4C395;
+}
+
+.primary-third-color{
+    color: #A296BD;
+}
+
+.primary-third-bg-color{
+    background-color: #A296BD;
+}
+
+.neutral-first-color{
+    color: #FFFFFF;
+}
+
+.neutral-first-bg-color{
+    background-color: #FFFFFF;
+}
+
+.neutral-second-color{
+    color: #8D8080;
+}
+
+.neutral-second-bg-color{
+    background-color: #8D8080;
+}
+
+.neutral-third-color{
+    color: #999999;
+}
+
+.neutral-third-bg-color{
+    background-color: #999999;
+}
+
+.light-first-color{
+    color: #D1CAFF;
 }
 
 .light-first-bg-color{
     background-color: #D1CAFF;
 }
-.light-first-color{
-    color: #D1CAFF;
+
+.light-second-color{
+    color: #FFCACA;
+}
+
+
+.light-second-bg-color{
+    background-color: #FFCACA;
+}
+
+.light-third-color{
+    color: #CAECFF;
+}
+
+.light-third-bg-color{
+    background-color: #CAECFF;
+}
+
+.box-shadow{
+    box-shadow: 10px 10px #12151D;
 }
 
 *{
