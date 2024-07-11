@@ -40,6 +40,9 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
+            <div className='block sm:hidden'>
+          <button className=' bg-red-950'>this button</button>
+        </div>
         </div>
     )
 }
