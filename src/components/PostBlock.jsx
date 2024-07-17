@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 function PostBlock() {
     
     return(
-        <div className=' w-11/12 h-[99px] flex items-center second_bg_color rounded-xl my-4 box-shadow'>
+        <div className='w-11/12 h-[99px] flex items-center second_bg_color rounded-xl my-4 box-shadow'>
             <div className=' flex w-full px-2'>
                 <img src="/images/avatar.png" alt="" className=' w-14 h-14'/>
                 <div>
