@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home/>} className="w-full h-full"/>
           <Route path="/home" element={<Home/>} className="w-full h-full"/>
         </Routes>
-        {/* <Aside/> */}
+        <Aside/>
       </div>
     </>
   );

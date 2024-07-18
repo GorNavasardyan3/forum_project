@@ -3,7 +3,7 @@ import Button from '../ui/Button'
 
 function Aside() {
   return (
-    <aside className=' w-[300px] p-2 border-l border-[#999999]'>
+    <aside className=' max-xl:hidden block w-[300px] p-2 border-l border-[#999999]'>
         <div className=' third-color flex justify-center items-center h-[150px] w-[250px] rounded-xl m-4'>
             <Button text={'Login'}/>
         </div>

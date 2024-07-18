@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Button from '../ui/Button'
 function Sidebar() {
     return (
-        <div className=' h-full flex flex-col justify-center items-center border-r border-[#999999]'>
+        <div className='max-md:hidden h-full flex flex-col justify-center items-center border-r border-[#999999]'>
             <Button text="Create Theam"></Button>
             <div className=' w-4/5 flex flex-col text-base text-white font-semibold'>
                 <a href="#" className=' flex items-center'><FontAwesomeIcon icon={faEnvelope} className='h-[25px] w-[25px] pr-2'/> Profile</a>
