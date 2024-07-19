@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className=" flex">
+      <div className=" flex 2xl:container 2xl:mx-auto">
         <Sidebar />
         <div className="md:hidden h-[50px] light-first-bg-color flex items-center rounded-r-md p-[1px]">
           <button onClick={() => setMobileSidebarAside(true)}>
