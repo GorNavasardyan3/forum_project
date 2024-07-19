@@ -9,10 +9,6 @@
 
 /* colors */
 
-.second_color{
-    color: #252D3A;
-}
-
 .second_bg_color{
     background-color: #252D3A;
 }
@@ -123,6 +119,32 @@
     font-optical-sizing: auto;
     font-style: normal;
 } */
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1b1825; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.second_color{
+    color: #252D3A;
+}
 
 body{
     background-color: #202433;
