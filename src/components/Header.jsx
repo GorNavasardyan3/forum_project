@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import MobileNavbar from './MobileNavbar';
+import Search from './Search';
 
 function Header() {
   const [mobileMenuButton, setMobileMenuButton] = useState(false);
@@ -13,19 +14,16 @@ function Header() {
         <div className='flex items-center ml-10'>
           <div className='p-2 flex items-center justify-between sm:w-fit w-[50vw]'>
             <i className='sm:m-2'>
-              <FontAwesomeIcon className='xl:h-10 xl:w-10 sm:h-8 sm:w-8 h-[30px] w-[30px]' icon={faSackDollar} />
+              <FontAwesomeIcon className='xl:h-8 xl:w-8 sm:h-6 sm:w-6 h-[30px] w-[30px]' icon={faSackDollar} />
             </i>
             <p>Forum</p>
           </div>
-          <div className='m-2 lg:flex hidden items-start fourth_bg_color rounded-md'>
-            <div className='p-2'>
-              <img src="/images/search.png" className='xl:h-[30px] xl:w-[35px] sm:h-[25px] sm:w-[25px]' alt="" />
-            </div>
-            <input type="text" placeholder='Որոնում...' className='text-xl xl:w-full sm:w-[200px] fourth_bg_color outline-none ml-2 p-2 rounded-md' />
+          <div className=' max-sm:hidden'>
+            <Search/>
           </div>
         </div>
 
-        <Navbar setMobileMenuButton={setMobileMenuButton} mobileMenuButton={mobileMenuButton}/>
+        <Navbar />
         <MobileNavbar setMobileMenuButton={setMobileMenuButton} mobileMenuButton={mobileMenuButton}/>
         <div className='mr-2 p-2 sm:flex hidden gap-4'>
           <button className='bells-shadow'>

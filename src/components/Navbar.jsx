@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className='hidden sm:flex xl:gap-10 sm:gap-3 xl:text-xl sm:text-md'>
+    <nav className='hidden sm:flex xl:gap-10 sm:gap-3 xl:text-xl sm:text-md whitespace-nowrap'>
         <Link to={'/home'} >Գլխավոր</Link>
         <Link to={'/shop'}>Խանութ</Link>
         <Link to={'/about'}>Մեր մասին</Link>

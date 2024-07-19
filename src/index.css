@@ -134,3 +134,26 @@ body{
     box-shadow:  -5px -5px 0px #FC728B;
     border-radius:50%;
 }
+
+
+/* input clip path */
+
+
+.clip-box {
+    width: 100% !important;
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+.clip-box-closed {
+    width: 100% !important;
+    transition: clip-path 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    clip-path: inset(0 0 100% 0); 
+}
+  
