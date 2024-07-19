@@ -6,7 +6,7 @@ import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
 function Category() {
 
     return (
-        <div className='flex flex-col justify-center items-start w-[250px] rounded-xl  text-white'>
+        <div className='flex flex-col justify-center items-start w-[250px] rounded-xl m-4 text-white'>
                 <a href="#" className=' flex items-center'><FontAwesomeIcon icon={faEnvelope} className='h-[25px] w-[25px] pr-2'/> Profile</a>
                 <a href="#" className=' flex items-center'><FontAwesomeIcon icon={faEnvelope} className='h-[25px] w-[25px] pr-2'/> Your Threads</a>
                 <a href="#" className=' flex items-center'><FontAwesomeIcon icon={faEnvelope} className='h-[25px] w-[25px] pr-2'/> Saved</a>
