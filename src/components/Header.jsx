@@ -14,12 +14,7 @@ function Header() {
         <div className='flex items-center ml-10'>
           <div className='p-2 flex items-center justify-between sm:w-fit w-[50vw]'>
             <i className='sm:m-2'>
-<<<<<<< Updated upstream
               <FontAwesomeIcon className='xl:h-8 xl:w-8 sm:h-6 sm:w-6 h-[30px] w-[30px]' icon={faSackDollar} />
-=======
-              {/* <img src="/images/logo.png" alt="" /> */}
-              <FontAwesomeIcon className='xl:h-10 xl:w-10 sm:h-8 sm:w-8 h-[30px] w-[30px]' icon={faSackDollar} />
->>>>>>> Stashed changes
             </i>
             <p>Forum</p>
           </div>
