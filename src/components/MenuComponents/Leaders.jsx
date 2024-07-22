@@ -3,8 +3,8 @@ import React from 'react'
 function Leaders() {
 
     return (
-        <div className=' px-8 flex flex-col mt-5 text-white font-semibold'>
-                <h3 className=' text-2xl py-5'>Top Leaderboards</h3>
+        <div className='third-bg-color w-[250px] rounded-xl px-8 flex flex-col py-5 text-white font-semibold m-4'>
+                <h3 className=' text-xl pb-2'>Top Leaderboards</h3>
                 <div>
                     <div className=' flex justify-between py-1'>
                         <div className=' bg-yellow-300 w-11 h-11 rounded-md'></div>

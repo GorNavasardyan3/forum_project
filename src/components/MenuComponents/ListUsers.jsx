@@ -3,7 +3,7 @@ import React from 'react'
 function ListUsers() {
 
     return (
-        <div className=' third-color m-4 rounded-xl text-white'>
+        <div className=' third-bg-color m-4 rounded-xl text-white'>
             <div className=' flex justify-between p-2'>
                 <h2>List of online users</h2>
                 <button>

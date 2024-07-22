@@ -19,6 +19,10 @@ function Home() {
       <PostBlock />
       <PostBlock />
       <PostBlock />
+      <PostBlock />
+      <PostBlock />
+      <PostBlock />
+      <PostBlock />
     </div>
   )
 }

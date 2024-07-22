@@ -4,7 +4,7 @@ import ListUsers from './MenuComponents/ListUsers.jsx'
 
 function Aside() {
   return (
-    <aside className=' max-xl:hidden block w-[300px] p-2 border-l border-[#999999]'>
+    <aside className=' max-xl:hidden block w-[300px] h-full p-2'>
         <Login />
         
         <ListUsers />

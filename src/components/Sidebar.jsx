@@ -6,7 +6,7 @@ import Login from './MenuComponents/Login.jsx'
 import ListUsers from './MenuComponents/ListUsers.jsx'
 function Sidebar() {
     return (
-        <div className='max-md:hidden h-full flex flex-col justify-center items-center border-r border-[#999999]'>
+        <div className='max-md:hidden h-full flex flex-col justify-center items-center  m-4 py-2 '>
             <CreateTheam/>
 
             <div className=' max-lg:block hidden'>
