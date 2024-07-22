@@ -12,7 +12,7 @@ function SidebarAsideMobile({mobileSidebarAside,setMobileSidebarAside}) {
 
 
   return (
-    <div className={mobileSidebarAside ? ' md:left-[-500px] fixed h-[100vh] duration-300 top-0 left-0 bg-[#202433] overflow-scroll' : ' top-0 bg-[#202433] duration-300 fixed left-[-500px]'}>
+    <div className={mobileSidebarAside ? ' md:left-[-500px] fixed z-[10] h-[100vh] duration-300 top-0 left-0 bg-[#202433] overflow-scroll' : ' top-0 bg-[#202433] duration-300 fixed z-[10] left-[-500px]'}>
         <div className=' flex justify-between p-4'>
             <div className='flex items-center p-2 text-white'>
                 <FontAwesomeIcon className='mr-2 h-[30px] w-[30px]' icon={faSackDollar}/>

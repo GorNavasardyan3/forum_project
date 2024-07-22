@@ -23,11 +23,11 @@ function MobileNavbar({mobileMenuButton,setMobileMenuButton}) {
                         </button>
                     </div>
             </div>
-            <MobileSearch/>
+            <MobileSearch/> 
         </div>
 
         <div className=' flex flex-col text-xl gap-4 p-4'>
-            <Link onClick={() => setMobileMenuButton(false)} to={'/home'} >Home</Link>
+            <Link onClick={() => setMobileMenuButton(false)} to={'/'} >Home</Link>
             <Link onClick={() => setMobileMenuButton(false)} to={'/shop'}>Shop</Link>
             <Link onClick={() => setMobileMenuButton(false)} to={'/about'}>About</Link>
             <Link onClick={() => setMobileMenuButton(false)} to={'/community'}>Community</Link>

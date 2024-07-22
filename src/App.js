@@ -7,6 +7,7 @@ import SidebarAsideMobile from "./components/SidebarAsideMobile";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import AddResponse from "./components/AddResponse";
 
 function App() {
   const [mobileSidebarAside,setMobileSidebarAside] = useState(false)
@@ -25,7 +26,7 @@ function App() {
         <SidebarAsideMobile mobileSidebarAside={mobileSidebarAside} setMobileSidebarAside={setMobileSidebarAside}/>
         <Routes>
           <Route path="/" element={<Home/>} className="w-full h-full"/>
-          <Route path="/home" element={<Home/>} className="w-full h-full"/>
+          <Route path="/addresponse" element={<AddResponse/>} className="w-full h-full"/>
         </Routes>
         <Aside/>
       </div>
