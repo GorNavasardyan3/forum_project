@@ -22,15 +22,14 @@ function PostBlock() {
             <div className='w-full  p-2 mb-2'>
                 <div className=' flex max-lg:justify-between'> 
                     <div className='flex items-center px-2'>
-                        <FontAwesomeIcon icon={faThumbsUp} className='primary-first-color h-[25px] w-[25px] px-1'/>
-                        <p>10</p>
+                    <button className=' w-9 h-5 flex'><img src="/images/like.png" alt="" className=' w-full h-full' />10</button>
                     </div>
                     {/* <div className='flex items-center px-2'>
                         <FontAwesomeIcon icon={faEnvelope} className='primary-third-color h-[25px] w-[25px] px-1'/>
                         <p>10</p>
                         </div> */}
                     <div className=' px-2 flex justify-around items-center rounded-xl neutral-first-bg-color'>
-                        <FontAwesomeIcon icon={faEnvelope} className='h-[25px] w-[25px] pr-2 fourth_color'/>
+                        <img src="/images/responses.png" alt="" />
                         <p className=' fourth_color'>Պատասխանել</p>
                         <div className='mx-1 primary-first-bg-color w-5 h-6 flex justify-center items-center rounded-r-md'>
                             10
