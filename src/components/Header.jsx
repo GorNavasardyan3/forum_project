@@ -6,6 +6,7 @@ import MobileNavbar from './MobileNavbar';
 import Search from './Search';
 import BellAndSMS from './MenuComponents/BellAndSMS';
 
+
 function Header() {
   const [mobileMenuButton, setMobileMenuButton] = useState(false);
 
@@ -26,13 +27,16 @@ function Header() {
 
         <Navbar />
         <MobileNavbar setMobileMenuButton={setMobileMenuButton} mobileMenuButton={mobileMenuButton}/>
-        <div className='sm:flex hidden'>
-          <BellAndSMS/>
-        </div>
-        <div className='block sm:hidden p-4'>
+      
+        <div className='flex'>
+          <div className='sm:flex'>
+            <BellAndSMS/>
+          </div>
+          <div className='flex sm:hidden p-4'>
           <button onClick={() => setMobileMenuButton(!mobileMenuButton)}>
             <img src="/images/openmobilemenubtn.png" className='h-[20px] w-[20px]' alt="" />
           </button>
+        </div>
         </div>
       </div>
     </header>
