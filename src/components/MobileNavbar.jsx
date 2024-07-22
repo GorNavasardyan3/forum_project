@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MobileSearch from './MobileSearch'
+import BellAndSMS from './MenuComponents/BellAndSMS'
 
 function MobileNavbar({mobileMenuButton,setMobileMenuButton}) {
   return (
@@ -16,9 +17,12 @@ function MobileNavbar({mobileMenuButton,setMobileMenuButton}) {
                     <FontAwesomeIcon className='mr-2 h-[30px] w-[30px]' icon={faSackDollar}/>
                     <p>forum</p>
                 </div>
-                <button onClick={() => setMobileMenuButton(false)}>
-                    <img src="/images/close.png" className=' h-[35px] w-[35px]' alt="" />
-                </button>
+                <div className=' flex'>
+                        <BellAndSMS/>
+                        <button onClick={() => setMobileMenuButton(false)}>
+                            <img src="/images/close.png" className=' h-[35px] w-[35px]' alt="" />
+                        </button>
+                    </div>
             </div>
             <MobileSearch/>
         </div>

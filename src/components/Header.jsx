@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Navbar from './Navbar'
 import MobileNavbar from './MobileNavbar';
 import Search from './Search';
+import BellAndSMS from './MenuComponents/BellAndSMS';
 
 function Header() {
   const [mobileMenuButton, setMobileMenuButton] = useState(false);
@@ -25,13 +26,8 @@ function Header() {
 
         <Navbar />
         <MobileNavbar setMobileMenuButton={setMobileMenuButton} mobileMenuButton={mobileMenuButton}/>
-        <div className='mr-2 p-2 sm:flex hidden gap-4'>
-          <button className='bells-shadow'>
-            <img src="/images/bell.png" className='xl:h-[35px] xl:w-[35px] h-[28px] w-[28px]' alt="" />
-          </button>
-          <button>
-            <img src="/images/smsnotification.png" className='xl:h-[20px] xl:w-[20px] h-[16px] w-[16px]' alt="" />
-          </button>
+        <div className='sm:flex hidden'>
+          <BellAndSMS/>
         </div>
         <div className='block sm:hidden p-4'>
           <button onClick={() => setMobileMenuButton(!mobileMenuButton)}>
