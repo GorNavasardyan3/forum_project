@@ -8,6 +8,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import AddResponse from "./components/AddResponse";
+import User from "./pages/User";
 
 function App() {
   const [mobileSidebarAside,setMobileSidebarAside] = useState(false)
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} className="w-full h-full"/>
           <Route path="/addresponse" element={<AddResponse/>} className="w-full h-full"/>
+          <Route path="/user" element={<User/>} className="w-full h-full"/>
         </Routes>
         <Aside/>
       </div>
