@@ -5,9 +5,9 @@ import LoginModal from './LoginModal.jsx';
 
 function Aside() {
   return (
-    <aside className=' max-xl:hidden block w-[300px] h-full p-2'>
-        <Login/>
-        <LoginModal />
+    <aside className=' max-xl:hidden block w-[300px] h-full p-2 my-4'>
+        <Login />
+        
         <ListUsers />
     </aside>
   )

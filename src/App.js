@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import AddResponse from "./components/AddResponse";
+import Conversations from "./pages/Conversations";
 import User from "./pages/User";
 import LoginPage from "./pages/Login";
 import RegistrationPage from "./pages/Registration";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home/>} className="w-full h-full"/>
           <Route path="/addresponse" element={<AddResponse/>} className="w-full h-full"/>
           <Route path="/user" element={<User/>} className="w-full h-full"/>
+          <Route path="/conversations" element={<Conversations/>} className="w-full h-full"/>
         </Routes>
         <Aside/>
       </div></>}

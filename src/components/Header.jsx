@@ -18,7 +18,7 @@ function Header() {
             <i className='sm:m-2'>
               <FontAwesomeIcon className='xl:h-8 xl:w-8 sm:h-6 sm:w-6 h-[30px] w-[30px]' icon={faSackDollar} />
             </i>
-            <p>Forum</p>
+            <p><span className=' shadow-md transition duration-300'>F</span>ORUM</p>
           </div>
           <div className=' max-sm:hidden'>
             <Search/>
