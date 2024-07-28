@@ -2,8 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { useNavigate } from 'react-router-dom';
 function PostBlock() {
-    
+    const navigation = useNavigate('');
     return(
         <div className='w-11/12 lg:h-[99px] max-lg:flex-col  flex max-lg:items-start items-center second_bg_color rounded-xl my-4 box-shadow'>
            <div className=' flex flex-col items-center lg:flex-row w-full'>
@@ -28,7 +29,7 @@ function PostBlock() {
                         <FontAwesomeIcon icon={faEnvelope} className='primary-third-color h-[25px] w-[25px] px-1'/>
                         <p>10</p>
                         </div> */}
-                    <div className=' px-2 flex justify-around items-center rounded-xl neutral-first-bg-color'>
+                    <div onClick={() => navigation('/addresponse')} className='cursor-pointer px-2 flex justify-around items-center rounded-xl neutral-first-bg-color'>
                         <img src="/images/responses.png" alt="" />
                         <p className=' fourth_color'>Պատասխանել</p>
                         <div className='mx-1 primary-first-bg-color w-5 h-6 flex justify-center items-center rounded-r-md'>

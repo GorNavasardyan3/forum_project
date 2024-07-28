@@ -4,19 +4,28 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import Aside from "./components/Aside";
 import SidebarAsideMobile from "./components/SidebarAsideMobile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import AddResponse from "./components/AddResponse";
 import User from "./pages/User";
+import LoginPage from "./pages/Login";
+import RegistrationPage from "./pages/Registration";
 
 function App() {
   const [mobileSidebarAside,setMobileSidebarAside] = useState(false)
-
-
+  const [loginPage,setLoginPage] = useState(true);
+  useEffect(() => {
+    const currentPage = window.location.pathname
+    if(currentPage == '/login' || currentPage == '/registration') {
+      setLoginPage(true);
+    } else {
+      setLoginPage(false)
+    }
+  },[loginPage]);
   return (
     <>
-      <Navbar/>
+      {!loginPage && <><Navbar/>
       <div className=" flex 2xl:container 2xl:mx-auto">
         <Sidebar />
         <div className="md:hidden h-[50px] light-first-bg-color flex items-center rounded-r-md p-[1px]">
@@ -31,7 +40,11 @@ function App() {
           <Route path="/user" element={<User/>} className="w-full h-full"/>
         </Routes>
         <Aside/>
-      </div>
+      </div></>}
+      <Routes>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/registration" element={<RegistrationPage/>}/>
+      </Routes>
     </>
   );
 }

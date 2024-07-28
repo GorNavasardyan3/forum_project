@@ -1,6 +1,7 @@
 import { faSackDollar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Button from "../ui/Button"
+import LoginCard from "./LoginCard"
 
 function LoginModal({ showLoginModal, setShowLoginModal }) {
   return (
@@ -17,28 +18,7 @@ function LoginModal({ showLoginModal, setShowLoginModal }) {
             </button>
           </div>
         </div>
-        <div className="m-2">
-            <p className=" text-gray-400">Email</p>
-            <input type="email" placeholder="navasardyangor1@gmail.com" className=" fourth_bg_color w-full p-2 outline-none text-gray-400 rounded-md" />
-        </div>
-        <div className="m-2">
-            <div className=" flex justify-between">
-                <p className=" text-gray-400">Password</p>
-                <button className="light-first-color">Forgot Password?</button>
-            </div>
-            <input type="password" placeholder="********" className=" fourth_bg_color w-full p-2 outline-none text-gray-400 rounded-md" />
-        </div>
-        <div className=" m-2 text-gray-400 flex items-center gap-2">
-            <input type="checkbox" className=" h-[15px] w-[15px]" />
-            <p>Remember me</p>
-        </div>
-        <div className=" w-[100%] flex justify-center">
-            <Button text={'Login'}/>
-        </div>
-        <div className=" flex justify-center gap-2">
-            <p className=" text-gray-400">Don't have an account ?</p>
-            <button className=" light-first-color">Create one</button>
-        </div>
+        <LoginCard/>
       </div>
     </div>
   )
